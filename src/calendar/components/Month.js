@@ -1,4 +1,4 @@
-import { createNamespace } from '../../utils';
+import { createNamespace, addUnit } from '../../utils';
 import { setScrollTop } from '../../utils/dom/scroll';
 import {
   t,
@@ -40,6 +40,12 @@ export default createComponent({
   computed: {
     title() {
       return formatMonthTitle(this.date);
+    },
+
+    rowHeightWithUnit() {
+      if (this.rowHeight !== ROW_HEIGHT) {
+        return addUnit(this.rowHeight);
+      }
     },
 
     offset() {
@@ -183,6 +189,10 @@ export default createComponent({
         return 'disabled';
       }
 
+      if (currentDate === null) {
+        return;
+      }
+
       if (type === 'single') {
         return compareDay(day, currentDate) === 0 ? 'selected' : '';
       }
@@ -209,14 +219,12 @@ export default createComponent({
     },
 
     getDayStyle(type, index) {
-      const style = {};
+      const style = {
+        height: this.rowHeightWithUnit,
+      };
 
       if (index === 0) {
         style.marginLeft = `${(100 * this.offset) / 7}%`;
-      }
-
-      if (this.rowHeight !== ROW_HEIGHT) {
-        style.height = `${this.rowHeight}px`;
       }
 
       if (this.color) {
@@ -287,7 +295,14 @@ export default createComponent({
             tabindex={-1}
             onClick={onClick}
           >
-            <div class={bem('selected-day')} style={{ background: this.color }}>
+            <div
+              class={bem('selected-day')}
+              style={{
+                width: this.rowHeightWithUnit,
+                height: this.rowHeightWithUnit,
+                background: this.color,
+              }}
+            >
               {TopInfo}
               {item.text}
               {BottomInfo}

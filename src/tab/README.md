@@ -224,7 +224,7 @@ export default {
 | color | Tab color | _string_ | `#ee0a24` |
 | background | Background color | _string_ | `white` |
 | duration | Toggle tab's animation time | _number \| string_ | `0.3` | - |
-| line-width | Width of tab line | _number \| string_ | Width of active tab |
+| line-width | Width of tab line | _number \| string_ | `40px` |
 | line-height | Height of tab line | _number \| string_ | `3px` |
 | animated | Whether to change tabs with animation | _boolean_ | `false` |
 | border | Whether to show border when `type="line"` | _boolean_ | `false` |
@@ -247,11 +247,11 @@ export default {
 | disabled | Whether to disable tab | _boolean_ | `false` |
 | dot `v2.3.0` | Whether to show red dot on the title | _boolean_ | `false` |
 | badge `v2.5.6` | Content of the badge on the title | _number \| string_ | - |
-| name `v2.0.6` | Identifier | _number \| string_ | Index of tab |
-| url `v2.2.1` | Link | _string_ | - |
-| to `v2.2.1` | Target route of the link, same as to of vue-router | _string \| object_ | - |
-| replace `v2.2.1` | If true, the navigation will not leave a history record | _boolean_ | `false` |
-| title-style `v2.2.14` | Custom title style | _any_ | - |
+| name | Identifier | _number \| string_ | Index of tab |
+| url | Link | _string_ | - |
+| to | Target route of the link, same as to of vue-router | _string \| object_ | - |
+| replace | If true, the navigation will not leave a history record | _boolean_ | `false` |
+| title-style | Custom title style | _any_ | - |
 
 ### Tabs Events
 

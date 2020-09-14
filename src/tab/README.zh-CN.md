@@ -231,8 +231,8 @@ export default {
 | color | 标签主题色 | _string_ | `#ee0a24` |
 | background | 标签栏背景色 | _string_ | `white` |
 | duration | 动画时间，单位秒 | _number \| string_ | `0.3` |
-| line-width | 底部条宽度，默认单位`px` | _number \| string_ | `auto` |
-| line-height | 底部条高度，默认单位`px` | _number \| string_ | `3px` |
+| line-width | 底部条宽度，默认单位 `px` | _number \| string_ | `40px` |
+| line-height | 底部条高度，默认单位 `px` | _number \| string_ | `3px` |
 | animated | 是否开启切换标签内容时的转场动画 | _boolean_ | `false` |
 | border | 是否显示标签栏外边框，仅在 `type="line"` 时有效 | _boolean_ | `false` |
 | ellipsis | 是否省略过长的标题文字 | _boolean_ | `true` |
@@ -255,11 +255,11 @@ export default {
 | dot `v2.3.0` | 是否在标题右上角显示小红点 | _boolean_ | `false` |
 | badge `v2.5.6` | 图标右上角徽标的内容 | _number \| string_ | - |
 | info `v2.3.0` | 图标右上角徽标的内容（已废弃，请使用 badge 属性） | _number \| string_ | - |
-| name `v2.0.6` | 标签名称，作为匹配的标识符 | _number \| string_ | 标签的索引值 |
-| url `v2.2.1` | 点击后跳转的链接地址 | _string_ | - |
-| to `v2.2.1` | 点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to) | _string \| object_ | - |
-| replace `v2.2.1` | 是否在跳转时替换当前页面历史 | _boolean_ | `false` |
-| title-style `v2.2.14` | 自定义标题样式 | _any_ | - |
+| name | 标签名称，作为匹配的标识符 | _number \| string_ | 标签的索引值 |
+| url | 点击后跳转的链接地址 | _string_ | - |
+| to | 点击后跳转的目标路由对象，同 vue-router 的 [to 属性](https://router.vuejs.org/zh/api/#to) | _string \| object_ | - |
+| replace | 是否在跳转时替换当前页面历史 | _boolean_ | `false` |
+| title-style | 自定义标题样式 | _any_ | - |
 
 ### Tabs Events
 

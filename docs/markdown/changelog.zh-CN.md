@@ -10,6 +10,104 @@ Vant 遵循 [Semver](https://semver.org/lang/zh-CN/) 语义化版本规范。
 - 次版本号：每隔一至二个月发布，包含新特性和较大的功能更新，向下兼容。
 - 主版本号：发布时间不定，包含不兼容更新，预计下一个主版本会与 Vue 3.0 同期发布。
 
+### [v2.10.6](https://github.com/youzan/vant/compare/v2.10.5...v2.10.6)
+
+`2020-09-08`
+
+**Bug Fixes**
+
+- Calendar: 修复 readonly 属性在多选模式下无效的问题 [#7127](https://github.com/youzan/vant/issues/7127)
+- CouponCell: 修复金额取值逻辑错误的问题 [#7123](https://github.com/youzan/vant/issues/7123)
+- List: 修复第一个子元素的 scoped 样式无效的问题 [#7128](https://github.com/youzan/vant/issues/7128)
+
+### [v2.10.5](https://github.com/youzan/vant/compare/v2.10.4...v2.10.5)
+
+`2020-09-06`
+
+**Feature**
+
+- ActionSheet: 新增 closeable 属性 [#7099](https://github.com/youzan/vant/issues/7099)
+- Area: 新增 readonly 属性 [#7106](https://github.com/youzan/vant/issues/7106)
+- Calendar: 新增 readonly 属性 [#7115](https://github.com/youzan/vant/issues/7115)
+- Calendar: 支持将默认选中的日期设置为空 [#7116](https://github.com/youzan/vant/issues/7116)
+- DatetimePicker: 新增 readonly 属性 [#7107](https://github.com/youzan/vant/issues/7107)
+- Picker: 新增 readonly 属性 [#7105](https://github.com/youzan/vant/issues/7105)
+
+**Bug Fixes**
+
+- Field: 修复 digit 类型可以输入负号的问题 [#7114](https://github.com/youzan/vant/issues/7114)
+- Form: 修复 name 重复时 scrollToError 位置错误的问题 [#7102](https://github.com/youzan/vant/issues/7102)
+- Form: 修复个别情况下校验状态错误的问题 [#7103](https://github.com/youzan/vant/issues/7103)
+- Toast: 修复重复调用时无法清除的问题 [#7100](https://github.com/youzan/vant/issues/7100)
+
+### [v2.10.4](https://github.com/youzan/vant/compare/v2.10.3...v2.10.4)
+
+`2020-09-03`
+
+**Feature**
+
+- 设计资源：新增 Axure 元件库，感谢 [@axure-tczy](https://github.com/axure-tczy) 同学提供资源
+- ActionSheet: 新增 description 插槽 [#7068](https://github.com/youzan/vant/issues/7068)
+- Icon: 新增 share-o 图标 [ea6324](https://github.com/youzan/vant/commit/ea6324234beae3bc4a700c59523a7091add49480)
+- Tabbar: 新增 before-change 属性 [#7081](https://github.com/youzan/vant/issues/7081)
+
+**Bug Fixes**
+
+- Calendar: 修复 row-height 对选中的日期不生效的问题 [#7046](https://github.com/youzan/vant/issues/7046)
+- Field: 修复表单项的值为 0 会导致 required 校验不通过的问题 [#7050](https://github.com/youzan/vant/issues/7050)
+- Icon: 修复 calendar-o 图标名称拼写错误 [#7080](https://github.com/youzan/vant/issues/7080)
+
+### [v2.10.3](https://github.com/youzan/vant/compare/v2.10.2...v2.10.3)
+
+`2020-08-25`
+
+**Feature**
+
+- Uploader: 新增 preview-cover 插槽的 index 参数 [#7036](https://github.com/youzan/vant/issues/7036)
+
+**style**
+
+- Search: 左侧内边距调整为 12px [#7014](https://github.com/youzan/vant/issues/7014)
+- Tabs: 底部条宽度固定为 40px [#7002](https://github.com/youzan/vant/issues/7002)
+- Toast: 调整顶部展示/底部展示时的位置 [#7044](https://github.com/youzan/vant/issues/7044)
+
+**Bug Fixes**
+
+- Calendar: 修复使用 rem 单位时滚动条跳动的问题 [#7037](https://github.com/youzan/vant/issues/7037)
+- Toast: 修复使用 get-container 属性可能导致 Toast 无法展示的问题 [#7032](https://github.com/youzan/vant/issues/7032)
+
+### [v2.10.2](https://github.com/youzan/vant/compare/v2.10.1...v2.10.2)
+
+`2020-08-12`
+
+**Feature**
+
+- Tab: 新增 @tab-line-height less 变量 [#6985](https://github.com/youzan/vant/issues/6985)
+
+**Bug Fixes**
+
+- Sku: 适配 sku.list 为空导致报错的问题 [#6991](https://github.com/youzan/vant/issues/6991)
+
+### [v2.10.1](https://github.com/youzan/vant/compare/v2.10.0...v2.10.1)
+
+`2020-08-10`
+
+**Feature**
+
+- Button: 新增 loading 插槽 [#6966](https://github.com/youzan/vant/issues/6966)
+- Locale: 新增挪威语语言包 [#6962](https://github.com/youzan/vant/issues/6962)
+
+**style**
+
+- ContactList: 适配 iOS 底部安全区 [#6970](https://github.com/youzan/vant/issues/6970)
+- TabbarItem: 图标大小扩大为 22px [#6972](https://github.com/youzan/vant/issues/6972)
+
+**Bug Fixes**
+
+- AddressEdit: 修复在 safari 上左侧文字换行的问题 [#6969](https://github.com/youzan/vant/issues/6969)
+- ContactEdit: 修复在 safari 上左侧文字换行的问题 [#6969](https://github.com/youzan/vant/issues/6969)
+- Icon: 修复徽标数字不居中的问题 [#6975](https://github.com/youzan/vant/issues/6975) [#6952](https://github.com/youzan/vant/issues/6952)
+
 ### [v2.10.0](https://github.com/youzan/vant/compare/v2.9.4...v2.10.0)
 
 `2020-08-07`

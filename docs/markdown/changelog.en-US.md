@@ -10,6 +10,102 @@ Vant follows [Semantic Versioning 2.0.0](https://semver.org/lang/zh-CN/).
 - Minor version：released every one to two months, including backwards compatible features.
 - Major version：including breaking changes and new features.
 
+### [v2.10.6](https://github.com/youzan/vant/compare/v2.10.5...v2.10.6)
+
+`2020-09-08`
+
+**Bug Fixes**
+
+- Calendar: readonly not work in multiple mode [#7127](https://github.com/youzan/vant/issues/7127)
+- CouponCell: fix discounted price [#7123](https://github.com/youzan/vant/issues/7123)
+- List: scoped style not applied to first child [#7128](https://github.com/youzan/vant/issues/7128)
+
+### [v2.10.5](https://github.com/youzan/vant/compare/v2.10.4...v2.10.5)
+
+`2020-09-06`
+
+**Feature**
+
+- ActionSheet: add closeable prop [#7099](https://github.com/youzan/vant/issues/7099)
+- Area: add readonly prop [#7106](https://github.com/youzan/vant/issues/7106)
+- Calendar: add readonly prop [#7115](https://github.com/youzan/vant/issues/7115)
+- Calendar: allow default-date to be null [#7116](https://github.com/youzan/vant/issues/7116)
+- DatetimePicker: add readonly prop [#7107](https://github.com/youzan/vant/issues/7107)
+- Picker: add readonly prop [#7105](https://github.com/youzan/vant/issues/7105)
+
+**Bug Fixes**
+
+- Field: disallow minus when using digit type [#7114](https://github.com/youzan/vant/issues/7114)
+- Form: scroll to first matched field [#7102](https://github.com/youzan/vant/issues/7102)
+- Form: should reset validation before submit [#7103](https://github.com/youzan/vant/issues/7103)
+- Toast: failed to clear in some cases [#7100](https://github.com/youzan/vant/issues/7100)
+
+### [v2.10.4](https://github.com/youzan/vant/compare/v2.10.3...v2.10.4)
+
+`2020-09-03`
+
+**Feature**
+
+- ActionSheet: add description slot [#7068](https://github.com/youzan/vant/issues/7068)
+- Icon: add share-o icon [ea6324](https://github.com/youzan/vant/commit/ea6324234beae3bc4a700c59523a7091add49480)
+- Tabbar: add before-change prop [#7081](https://github.com/youzan/vant/issues/7081)
+
+**Bug Fixes**
+
+- Calendar: row-height should work on selected month [#7046](https://github.com/youzan/vant/issues/7046)
+- Field: fix the issue of checking empty value [#7050](https://github.com/youzan/vant/issues/7050)
+- Icon: fix calendar-o typo [#7080](https://github.com/youzan/vant/issues/7080)
+
+### [v2.10.3](https://github.com/youzan/vant/compare/v2.10.2...v2.10.3)
+
+`2020-08-25`
+
+**Feature**
+
+- Uploader: preview-cover slot add index param [#7036](https://github.com/youzan/vant/issues/7036)
+
+**style**
+
+- Search: increase left padding to 12px [#7014](https://github.com/youzan/vant/issues/7014)
+- Tabs: adjust default line-width to 40px [#7002](https://github.com/youzan/vant/issues/7002)
+- Toast: adjust top position [#7044](https://github.com/youzan/vant/issues/7044)
+
+**Bug Fixes**
+
+- Calendar: render error when using rem unit [#7037](https://github.com/youzan/vant/issues/7037)
+- Toast: failed to reopen when using get-container [#7032](https://github.com/youzan/vant/issues/7032)
+
+### [v2.10.2](https://github.com/youzan/vant/compare/v2.10.1...v2.10.2)
+
+`2020-08-12`
+
+**Feature**
+
+- Tab: add @tab-line-height less var [#6985](https://github.com/youzan/vant/issues/6985)
+
+**Bug Fixes**
+
+- Sku: compatible sku.list don't exist [#6991](https://github.com/youzan/vant/issues/6991)
+
+### [v2.10.1](https://github.com/youzan/vant/compare/v2.10.0...v2.10.1)
+
+`2020-08-10`
+
+**Feature**
+
+- Button: add loading slot [#6966](https://github.com/youzan/vant/issues/6966)
+- Locale: adding Norwegian Language support [#6962](https://github.com/youzan/vant/issues/6962)
+
+**style**
+
+- ContactList: add safe area inset bottom [#6970](https://github.com/youzan/vant/issues/6970)
+- TabbarItem: increase icon size to 22px [#6972](https://github.com/youzan/vant/issues/6972)
+
+**Bug Fixes**
+
+- AddressEdit: incorrect label wrap on safari [#6969](https://github.com/youzan/vant/issues/6969)
+- Icon: fix badge number align [#6975](https://github.com/youzan/vant/issues/6975) [#6952](https://github.com/youzan/vant/issues/6952)
+
 ### [v2.10.0](https://github.com/youzan/vant/compare/v2.9.4...v2.10.0)
 
 `2020-08-07`
